@@ -1,0 +1,29 @@
+.landingVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.landingButton {
+    padding: 1vh 4vw;
+    background-color: #F6C28B;
+    border-radius: 25px;
+}
+
+.buttonContainer {
+    margin-top: 40vh;
+    color: white;
+}
+
+.landingButtonHeader {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+}
+
+.monoSocialIcon {
+    width: 30px;
+}

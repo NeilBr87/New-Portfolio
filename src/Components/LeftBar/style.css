@@ -1,0 +1,17 @@
+.leftBarContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #232C33;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16vw;
+    height: 100vh;
+    padding-top: 10vh;
+    font-family: 'Phudu', serif;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 4vw;
+}
