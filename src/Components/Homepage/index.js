@@ -20,22 +20,31 @@ import wordpress from './wordpress.svg';
 import LeftBar from '../LeftBar';
 import Portfolio from '../Portfolio';
 import Contact from '../Contact';
+import More from '../More';
 export default function Landing() {
 
     const [page, setPage] = useState("landing");
-
+    const [landing, setLanding] = useState("true");
     
 
     function homeButton() {
+        setLanding("false");
         setPage("home");
     }
 
     function portfolioButton() {
+        setLanding("false");
         setPage("portfolio");
     }
 
     function contactButton() {
+        setLanding("false");
         setPage("contact");
+    }
+
+    function moreButton() {
+        setLanding("false");
+        setPage("more");
     }
     
     return (
@@ -50,7 +59,7 @@ export default function Landing() {
                 <h1 onClick={homeButton} className="homeHeader">Home</h1>
                 <h1 onClick={portfolioButton}className="homeHeader">Portfolio</h1>
                 <h1 onClick={contactButton} className="homeHeader">Contact</h1>
-                <h1 className="homeHeader">More</h1>
+                <h1 onClick={moreButton} className="homeHeader">More</h1>
             </div>
             <div className="briefBio">
                 <p>Neil Brooks</p>
@@ -170,6 +179,7 @@ export default function Landing() {
 
             {page === "portfolio" && <Portfolio /> }
             {page === "contact" && <Contact /> }
+            {page === "more" && <More /> }
 
         </div>
     );
